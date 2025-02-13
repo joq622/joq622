@@ -1,0 +1,100 @@
+bot - Start a conversation with the bot
+help - Get a list of available commands
+setrepo repository_name - Set the repository for actions
+getrepo - Get the current active repository
+addrepo repository_name - Add a new repository to track
+removereponame - Remove a repository from tracking
+listrepos - List all repositories currently being tracked
+repoinfo - Get information about the current repository
+repohelp - Get help related to repository management
+repoactions - View possible actions for the current repository
+clone - Clone the current repository to your local machine
+fork - Fork the current repository to your account
+starrepo - Star the current repository
+unstarrepo - Unstar the current repository
+starlist - View the repositories you have starred
+follow - Follow a user or organization on GitHub
+unfollow - Unfollow a user or organization on GitHub
+starredrepos - Get a list of starred repositories for a user
+createissue - Create a new issue in the current repository
+listissues - List all issues in the current repository
+getissue issue_number - Get details of a specific issue
+closeissue issue_number - Close an open issue
+reopenissue issue_number - Reopen a closed issue
+commentissue issue_number comment - Add a comment to a specific issue
+assignissue issue_number username - Assign an issue to a user
+unassignissue issue_number username - Unassign a user from an issue
+setlabel issue_number label - Add a label to an issue
+removelabel issue_number label - Remove a label from an issue
+setmilestone issue_number milestone - Add a milestone to an issue
+removemilestone issue_number - Remove a milestone from an issue
+listmilestones - View all milestones for the current repository
+createpullrequest - Create a new pull request
+listpullrequests - List all pull requests for the repository
+getpullrequest pr_number - Get details about a specific pull request
+mergepullrequest pr_number - Merge a pull request
+closepullrequest pr_number - Close a pull request
+reopenpullrequest pr_number - Reopen a closed pull request
+commentpr pr_number comment - Add a comment to a pull request
+assignpr pr_number username - Assign a user to a pull request
+unassignpr pr_number username - Unassign a user from a pull request
+addreviewer pr_number username - Add a reviewer to the pull request
+removereviewer pr_number username - Remove a reviewer from a pull request
+listreviews pr_number - List all reviews for a pull request
+addlabel pr_number label - Add a label to a pull request
+removelabel pr_number label - Remove a label from a pull request
+setmilestonepr pr_number milestone - Add a milestone to a pull request
+removemilestonepr pr_number - Remove a milestone from a pull request
+createbranch branch_name - Create a new branch in the repository
+checkoutbranch branch_name - Checkout to a specific branch
+deletebranch branch_name - Delete a branch from the repository
+listbranches - List all branches in the repository
+mergebranch branch_name - Merge a branch into the current branch
+rebasebranch branch_name - Rebase a branch onto the current branch
+listcollaborators - List all collaborators for the repository
+addcollaborator username - Add a collaborator to the repository
+removecollaborator username - Remove a collaborator from the repository
+createorganization org_name - Create a new organization on GitHub
+listorganizations - List all organizations you're part of
+createorganizationrepo org_name repo_name - Create a repository under an organization
+listorganizationrepos org_name - List all repositories in an organization
+forkorganizationrepo org_name repo_name - Fork a repository under an organization
+inviteorgcollaborator org_name username - Invite a user as a collaborator to an organization
+removeorgcollaborator org_name username - Remove a collaborator from an organization
+addteam org_name team_name - Add a new team to an organization
+listteams org_name - List all teams in an organization
+createproject repo_name project_name - Create a new project for a repository
+listprojects repo_name - List all projects for a repository
+addprojectcolumn project_name column_name - Add a new column to a project
+createissueproject project_name issue_number - Link an issue to a project
+listcontributors - List all contributors to a repository
+getcommit sha - Get the details of a specific commit
+listcommits - View the list of commits in a repository
+createcommit - Create a new commit in the repository
+gitlog - View the git log of a repository
+revertcommit sha - Revert a specific commit in the repository
+listtags - View the tags of the repository
+createtag tag_name - Create a new tag in the repository
+removetag tag_name - Remove a tag from the repository
+releaseinfo - Get release information for a repository
+createrelease release_name - Create a new release for a repository
+listreleases - List all releases of a repository
+getrelease release_id - Get details of a specific release
+updaterelease release_id - Update an existing release
+deleterelease release_id - Delete a specific release
+addasset release_id asset_file - Add an asset to a release
+removeasset release_id asset_file - Remove an asset from a release
+forkrepo - Fork the repository to your GitHub account
+viewcontributors - View contributors to the repository
+createwiki - Create a new wiki page for the repository
+listwiki - List all wiki pages for the repository
+editwiki - Edit a wiki page in the repository
+deletewiki - Delete a wiki page from the repository
+getwikistats - View statistics for the repository's wiki
+downloadrepo - Download the current repository as a ZIP file
+gethelp - Display help on available bot commands
+setprojectstatus project_name status - Set the status of a project
+getprojectstatus project_name - Get the current status of a project
+addprojecttask project_name task_name - Add a new task to a project
+listprojecttasks project_name - List tasks for a project
+completetask project_name task_name - Mark a task as complete in a project
