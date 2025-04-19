@@ -24,7 +24,7 @@
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=50&pause=4000&color=RRGGBB&lines=true&vCenter=true&width=815&height=100&lines=DEVELOPER-JOQUER+🇹🇿+💗)](https://git.io/typing-svg) 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=50&pause=4000&color=RRGGBB&lines=true&vCenter=true&width=815&height=100&lines=FOUNDER-JOQUER+🇹🇿+💗)](https://git.io/typing-svg) 
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
