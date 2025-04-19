@@ -32,34 +32,23 @@
 
 
 
-### 1. Fork This Repository
+### Fork This Repository
 
 Start by forking this repository to your own GitHub account. Click the button below to create a fork:
 
   
 <a href="https://github.com/joq622/joq622.git/fork"><img title="JOQUER-ISHLY" src="https://img.shields.io/badge/FORK-JOQUERHCET-BOTh?color=blue&style=for-the-badge&logo=github"></a>
-  
-### 2. Get Session ID 
 
-You will need a session ID to run the STANY-TXR-ZMD. Click the button below to obtain your session ID.if any error in loading site try vpn:
-
-> **1️⃣Pair Code (Session ID)**
-
-<a href='https://caseyrhodeshub-7kak.vercel.app' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black'/>
-</a>
-<br> 
-
-> **2️⃣Pair Code (Session ID)**
-
-<a href='https://enzo-md-sessions-generator-2.onrender.com' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-darkpink?style=for-the-badge&logo=opencv&logoColor=black'/>
-</a>
-<br> 
+  ### Deploying on Panel  
+1. Go to [Bot Hosting Panel](https://bot-hosting.net/?aff=1274828280750407803) and sign up.
+2. Sign up for a new account or log in to your existing account.
+3. Create a new **Web Service**.
+4. In the **Service Settings**, connect your GitHub repository where Queen Ruva AI Beta is stored.
+6. Deploy the service, and it will automatically start running.
 
 
 
-<h2 align="center">Our Deployment Options</h2>
+<h2 align="center">Other Deployment Options</h2>
 
 ---
 
