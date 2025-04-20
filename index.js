@@ -132,3 +132,27 @@ sock.ev.on('creds.update', saveState);
                await sock.sendMessage(msg.key.remoteJid, 
                  text: `⚠️ @{sender.split('@')[0]}, stickers are not allowed in this group. Please follow the rules.`,
                  mentions:
+                                      ```javascript
+const { exec } = require('child_process');
+const fs = require('fs');
+
+// Function to handle .play command
+async function handlePlayCommand(query, sendMessage) {
+  const outputFileName = 'song.mp3';
+  const command = `yt-dlp -x --audio-format mp3 -o "outputFileName" "ytsearch1:{query}"`;
+
+  exec(command, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error downloading audio: ${error.message}`);
+      return;
+    }
+    // Send the audio file
+    sendMessage({
+      audio: fs.readFileSync(outputFileName),
+      mimetype: 'audio/mp3',
+    });
+    // Clean up the file
+    fs.unlinkSync(outputFileName);
+  });
+}
+```
