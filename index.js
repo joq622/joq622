@@ -69,7 +69,7 @@ sock.ev.on('creds.update', saveState);
              text: `🌤️ Weather in *data.name*:
    - Temperature:{data.main.temp}°C
    - Weather: data.weather[0].description`
-           );
+           };
           catch 
            await sock.sendMessage(from,  text: `❌ Could not retrieve weather for "{city}".` });
          }
