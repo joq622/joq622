@@ -100,7 +100,8 @@ async function getWeather(city, sock, from) {
              headers: {
                'Content-Type': 'application/json',
                'Authorization': `Bearer openAiApiKey`
-             );
+          });
+       }
            const aiReply = response.data.choices[0].message.content;
            await sock.sendMessage(from,  text: aiReply );
           catch 
