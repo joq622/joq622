@@ -60,19 +60,28 @@ sock.ev.on('creds.update', saveState);
          await sock.sendMessage(from, { text: joke });
        }
        // Weather Command
-       else if (lower.startsWith('weather ')) {
-         const city = lower.split('weather ')[1];
-         try {
-           const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=city   units=metric   appid={openWeatherApiKey}`);
-           const data = response.data;
-           await sock.sendMessage(from, {
-             text: `🌤️ Weather in *data.name*:
-   - Temperature:{data.main.temp}°C
-   - Weather: data.weather[0].description`
-           }); //
-      }catch 
-           await sock.sendMessage(from,  text: `❌ Could not retrieve weather for "{city}".` });
-   }
+       const axios = require('axios');  // Make sure axios is imported
+const openWeatherApiKey = 'your-api-key'; // Replace with your OpenWeather API key
+
+// Function to get weather data and send it in a message
+async function getWeather(city, sock, from) {
+  try {
+    // Send a GET request to the OpenWeather API
+    const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=city   units=metric   appid={openWeatherApiKey}`);
+    const data = response.data;
+
+    // Send the weather info as a message
+    await sock.sendMessage(from, {
+      text: `🌤️ Weather in *data.name*:
+      - Temperature:{data.main.temp}°C
+      - Weather: ${data.weather[0].description}`
+    });
+  } catch (error) {console.error('Error fetching weather data:', error);
+    await sock.sendMessage(from, {
+      text: 'Sorry, I couldn\'t fetch the weather data at the moment.'
+    });
+  }
+}   
        // Search Command
        else if (lower.startsWith('search ')) {
          const query = lower.split('search ')[1];
