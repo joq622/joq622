@@ -121,45 +121,7 @@ async function getWeather(city, sock, from) {
   const aiReply = response.data.choices[0].message.content;
   await sock.sendMessage(from, { text: aiReply });
        }
-       // Group Management Commands
-       if (lower.startsWith('add ')) 
-         const number = lower.split('add ')[1].replace(//g, ”);
-         await sock.groupParticipantsUpdate(from, [`{number}@s.whatsapp.net`], 'add');
-       }
-       if (lower.startsWith('remove ')) {
-        
-         const number = lower.split('remove ')[1].replace(/\D/g, '');
-         await sock.groupParticipantsUpdate(from, [`${number}@s.whatsapp.net`], 'remove');
-       }
-       if (lower.startsWith('promote ')) {
-         const number = lower.split('promote ')[1].replace(/\D/g, '');
-await sock.groupParticipantsUpdate(from, [`{number}@s.whatsapp.net`], 'promote');
-       }
-       if (lower.startsWith('demote ')) {
-         const number = lower.split('demote ')[1].replace(/\D/g, '');
-         await sock.groupParticipantsUpdate(from, [`number@s.whatsapp.net`], 'demote');
        
-       // Anti-sticker feature with warning
-       if (msg.message?.stickerMessage) 
-         const isGroup = msg.key.remoteJid.endsWith('@g.us');
-         if (isGroup) 
-           try 
-             const metadata = await sock.groupMetadata(msg.key.remoteJid);
-             const botNumber = sock.user.id.split(':')[0] + '@s.whatsapp.net';
-
-             const botAdmin = metadata.participants.find(p => p.id === botNumber        p.admin);
-
-             if (botAdmin) 
-               // Delete the sticker message
-               await sock.sendMessage(msg.key.remoteJid,  delete: msg.key );
-
-               // Send a warning to the sender
-               const sender = msg.key.participant || msg.key.remoteJid;
-               await sock.sendMessage(msg.key.remoteJid, 
-                 text: `⚠️ @{sender.split('@')[0]}, stickers are not allowed in this group. Please follow the rules.`,
-                 mentions:
-
-
 // const { WAConnection } = require('@adiwajshing/baileys');
 // const conn = new WAConnection();
 
