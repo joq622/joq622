@@ -202,4 +202,82 @@ function extractCommand(message) {
 // Simulate receiving a message
 const incomingMessage = '!play Despacito';
 handleMessage(incomingMessage);
-```
+// Mute Group (admin-only messages)
+if (lower === 'mute') {
+  await sock.groupSettingUpdate(from, 'announcement');
+  await sock.sendMessage(from, { text: '*🔇 Group has been muted. Only admins can send messages.*' });
+}
+
+// Unmute Group (everyone can message)
+if (lower === 'unmute') {
+  await sock.groupSettingUpdate(from, 'not_announcement');
+  await sock.sendMessage(from, { text: '*🔊 Group has been unmuted. Everyone can now send messages.*' });
+}
+
+// Temporary Mute (e.g. "mute 5" for 5 minutes)
+if (lower.startsWith('mute ')) {
+  const minutes = parseInt(lower.split('mute ')[1]);
+  if (!isNaN(minutes)) {
+    await sock.groupSettingUpdate(from, 'announcement');
+    await sock.sendMessage(from, { text: `*⏳ Group muted for ${minutes} minute(s).*` });
+
+    // Schedule unmute after the given minutes
+    setTimeout(async () => {
+      await sock.groupSettingUpdate(from, 'not_announcement');
+      await sock.sendMessage(from, { text: '*🔔 Group unmuted automatically after timeout.*' });}, minutes * 60 * 1000); // Convert minutes to milliseconds
+  } else {
+    await sock.sendMessage(from, { text: '*❗ Please provide time in minutes. Example: mute 5*' });
+  }
+}
+if (lower.startsWith('tagall')) {
+  if (!isGroup) {
+    await sock.sendMessage(from, { text: '*❗ This command is only for groups.*' });
+    return;
+  }
+
+  const groupMetadata = await sock.groupMetadata(from);
+  const members = groupMetadata.participants.map((user) => user.id);
+  const mentions = members;
+
+  const customMessage = lower.split('tagall')[1].trim() || '📣';
+
+  const mentionText = members.map((member, i) => `i + 1. @{member.split('@')[0]}`).join('\n');
+
+  await sock.sendMessage(from, {
+    text: `*customMessage*{mentionText}`,
+    mentions: mentions
+  });
+}
+if (lower.startsWith('remove ')) {
+  const mention = m.message.extendedTextMessage?.contextInfo?.mentionedJid?.[0];
+
+  if (!isGroup || !mention) {
+    await sock.sendMessage(from, { text: '*❗ Use this in a group and mention someone to remove.*' });
+    return;
+  }
+
+  try {
+    await sock.groupParticipantsUpdate(from, [mention], 'remove');
+    await sock.sendMessage(from, {
+      text: `✅ Successfully removed @mention.split('@')[0]`,
+      mentions: [mention]
+    );
+   catch (err) 
+    await sock.sendMessage(from,  text: '❌ Failed to remove. Is the bot an admin?' );
+  “`
+ });
+}
+if (lower.startsWith('kick ')) 
+  const mention = m.message.extendedTextMessage?.contextInfo?.mentionedJid?.[0];
+
+  if (!isGroup || !mention) 
+    await sock.sendMessage(from,  text: '*😅 Mention someone to fake kick. Example: .kick @user*' );
+    return;
+  
+
+  await sock.sendMessage(from, 
+    text: `👢 *@{mention.split('@')[0]} has been kicked out of the group!*\n\n🛑 *Just kidding 😂 — I’m not even an admin!*`,
+    mentions: [mention]
+  });
+}
+
