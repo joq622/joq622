@@ -70,10 +70,7 @@ sock.ev.on('creds.update', saveState);
    - Temperature:{data.main.temp}°C
    - Weather: data.weather[0].description`
            }); //
-          catch 
-           await sock.sendMessage(from,  text: `❌ Could not retrieve weather for "{city}".` });
-         }
-       }
+      }
        // Search Command
        else if (lower.startsWith('search ')) {
          const query = lower.split('search ')[1];
