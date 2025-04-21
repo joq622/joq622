@@ -8,7 +8,7 @@
 
    const openWeatherApiKey = 'YOUR_OPENWEATHERMAP_API_KEY'; // Replace with your OpenWeatherMap API key
    const openAiApiKey = 'YOUR_OPENAI_API_KEY'; // Replace with your OpenAI API key
-
+   
    async function startBot() {
      const sock = makeWASocket({
        auth: state,
@@ -23,6 +23,7 @@ sock.ev.on('creds.update', saveState);
        const from = msg.key.remoteJid;
        const text = msg.message.conversation || msg.message.extendedTextMessage?.text || '';
        const lower = text.toLowerCase();
+       const bannedUsers = new Set();
 
        // Greeting
        if (lower === 'hi') {
