@@ -90,7 +90,7 @@ async function getWeather(city, sock, from) {
          });
        }
        // AI Chat Command
-else if (lower.startsWith('ai ')) {
+       else if (lower.startsWith('ai ')) {
          const prompt = lower.split('ai ')[1];
          try {
            const response = await axios.post('https://api.openai.com/v1/chat/completions', {
