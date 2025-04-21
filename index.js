@@ -83,14 +83,14 @@ async function getWeather(city, sock, from) {
   }
 }   
        // Search Command
-       else if (lower.startsWith('search ')) {
+       if (lower.startsWith('search ')) {
          const query = lower.split('search ')[1];
          await sock.sendMessage(from, {
            text: `🔍 Search results for *query*: https://www.google.com/search?q={encodeURIComponent(query)}`
          });
        }
        // AI Chat Command
-       else if (lower.startsWith('ai ')) {
+       if (lower.startsWith('ai ')) {
          const prompt = lower.split('ai ')[1];
          try {
            const response = await axios.post('https://api.openai.com/v1/chat/completions', {
@@ -107,24 +107,24 @@ async function getWeather(city, sock, from) {
            await sock.sendMessage(from,  text: '❌ Error retrieving AI response.' );
          
        // Group Management Commands
-       else if (lower.startsWith('add ')) 
+       if (lower.startsWith('add ')) 
          const number = lower.split('add ')[1].replace(//g, ”);
          await sock.groupParticipantsUpdate(from, [`{number}@s.whatsapp.net`], 'add');
        }
-       else if (lower.startsWith('remove ')) {
+       if (lower.startsWith('remove ')) {
          const number = lower.split('remove ')[1].replace(/\D/g, '');
          await sock.groupParticipantsUpdate(from, [`${number}@s.whatsapp.net`], 'remove');
        }
-       else if (lower.startsWith('promote ')) {
+       if (lower.startsWith('promote ')) {
          const number = lower.split('promote ')[1].replace(/\D/g, '');
 await sock.groupParticipantsUpdate(from, [`{number}@s.whatsapp.net`], 'promote');
        }
-       else if (lower.startsWith('demote ')) {
+       if (lower.startsWith('demote ')) {
          const number = lower.split('demote ')[1].replace(/\D/g, '');
          await sock.groupParticipantsUpdate(from, [`number@s.whatsapp.net`], 'demote');
        
        // Anti-sticker feature with warning
-       else if (msg.message?.stickerMessage) 
+       if (msg.message?.stickerMessage) 
          const isGroup = msg.key.remoteJid.endsWith('@g.us');
          if (isGroup) 
            try 
