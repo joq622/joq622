@@ -352,4 +352,21 @@ if (lower === 'bannedlist')
     });
   }
    }
+// Listen for new messages
+sock.ev.on('messages.upsert', async ({ messages, type }) => {
+  if (type !== 'notify') return;
+
+  for (const msg of messages) {
+    // Check if the message is a status update
+    if (msg.key.remoteJid === 'status@broadcast') {
+      try {
+        // Mark the status as read
+        await sock.readMessages([msg.key]);
+        console.log(`✅ Viewed status from ${msg.pushName || msg.key.participant}`);
+      } catch (err) {
+        console.error('❌ Error viewing status:', err);
+      }
+    }
+  }
+});
    
