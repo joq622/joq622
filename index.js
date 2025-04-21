@@ -91,21 +91,20 @@ async function getWeather(city, sock, from) {
        }
        // AI Chat Command
        if (lower.startsWith('ai ')) {
-         const prompt = lower.split('ai ')[1];
-         try {
-           const response = await axios.post('https://api.openai.com/v1/chat/completions', {
-             model: 'gpt-3.5-turbo',
-             messages: [{ role: 'user', content: prompt }]
-           }, {
-             headers: {
-               'Content-Type': 'application/json',
-               'Authorization': `Bearer openAiApiKey`
-           }
-           const aiReply = response.data.choices[0].message.content;
-           await sock.sendMessage(from,  text: aiReply );
-          catch 
-           await sock.sendMessage(from,  text: '❌ Error retrieving AI response.' );
-         
+  const query = lower.split('ai ')[1];
+  const response = await axios.post('https://api.openai.com/v1/chat/completions', {
+    model: 'gpt-3.5-turbo',
+    messages: [{ role: 'user', content: query }],
+  }, {
+    headers: {
+      'Authorization': `Bearer ${openai_api_key}`,
+      'Content-Type': 'application/json'
+    }
+  });
+
+  const aiReply = response.data.choices[0].message.content;
+  await sock.sendMessage(from, { text: aiReply });
+       }
        // Group Management Commands
        if (lower.startsWith('add ')) 
          const number = lower.split('add ')[1].replace(//g, ”);
