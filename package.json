@@ -1,0 +1,20 @@
+{
+  "name": "JOQUER-ISHLY",
+  "version": "1.0.0",
+  "description": "Deployment script for JOQUER-ISHLY bot",
+  "main": "index.js",
+  "engines": {
+      "node": ">= 18.x",
+      "npm": ">= 10.x"
+   },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Joquer",
+  "license": "MIT",
+  "dependencies": {
+        "adm-zip": "^0.5.16",
+        "axios": "^1.8.3",
+        "moment-timezone": "^0.5.45"
+  }
+}
