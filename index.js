@@ -295,4 +295,61 @@ if (lower.startsWith('kick '))
     mentions: [mention]
   });
 }
+if (lower.startsWith('ban ')) {
+  const mention = m.message.extendedTextMessage?.contextInfo?.mentionedJid?.[0];
 
+  if (!mention || !isGroup) {
+    await sock.sendMessage(from, { text: '*⚠️ Use .ban @user in a group chat and tag them.*' });
+    return;
+  }
+
+  bannedUsers.add(mention);
+
+  await sock.sendMessage(from, {text: `🚫 *@mention.split('@')[0] has been banned from talking.*`,
+    mentions: [mention]
+  );
+“`
+
+—
+
+`.unban` command:
+“`js
+if (lower.startsWith('unban ')) 
+  const mention = m.message.extendedTextMessage?.contextInfo?.mentionedJid?.[0];
+
+  if (!mention || !isGroup) 
+    await sock.sendMessage(from,  text: '*⚠️ Use .unban @user in a group chat and tag them.*' );
+    return;
+  
+
+  if (bannedUsers.has(mention)) 
+    bannedUsers.delete(mention);
+
+    await sock.sendMessage(from, 
+      text: `✅ *@{mention.split('@')[0]} has been unbanned and can now talk.*`,
+      mentions: [mention]
+    });
+  } else {
+    await sock.sendMessage(from, {
+      text: `ℹ️ *@mention.split('@')[0] is not in the banned list.*`,
+      mentions: [mention]
+    );
+  “`
+
+—
+
+`.bannedlist` command:
+“`js
+if (lower === 'bannedlist') 
+  if (bannedUsers.size === 0) 
+    await sock.sendMessage(from,  text: '✅ No users are currently banned.' );
+   else 
+    const list = [...bannedUsers].map((jid, index) => `*{index + 1}.* @jid.split('@')[0]`).join('');
+
+    await sock.sendMessage(from, 
+      text: `🚫 *Banned Users List:*{list}`,
+      mentions: [...bannedUsers]
+    });
+  }
+   }
+   
