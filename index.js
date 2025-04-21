@@ -45,6 +45,21 @@ sock.ev.on('creds.update', saveState);
    - demote <number>`
          });
        }
+          // Auto-delete messages from banned users
+if (bannedUsers.has(sender)) {
+  try {
+    await sock.sendMessage(from, {
+      delete: {
+        remoteJid: from,
+        fromMe: false,
+        id: m.key.id,
+        participant: sender
+      }
+    });
+  } catch (err) {
+    console.log('❌ Failed to delete banned user message:', err);
+  }
+}
        // Date & Time
        else if (lower === 'date' || lower === 'time') {
          const now = new Date();
