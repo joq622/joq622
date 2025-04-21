@@ -127,6 +127,7 @@ async function getWeather(city, sock, from) {
          await sock.groupParticipantsUpdate(from, [`{number}@s.whatsapp.net`], 'add');
        }
        if (lower.startsWith('remove ')) {
+        
          const number = lower.split('remove ')[1].replace(/\D/g, '');
          await sock.groupParticipantsUpdate(from, [`${number}@s.whatsapp.net`], 'remove');
        }
