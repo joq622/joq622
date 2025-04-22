@@ -12,7 +12,7 @@
     "dev": "nodemon index.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Tylor",
+  "author": "Joquer",
   "dependencies": {
         "@whiskeysockets/baileys": "https://github.com/Dark-Xploit/Baileys/archive/refs/tags/v1.3.0.tar.gz",
         "adm-zip": "^0.5.16",
