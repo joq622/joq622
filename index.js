@@ -52,7 +52,6 @@ const messageContent = msg.message.conversation || msg.message.extendedTextMessa
         const jid = number.includes('@s.whatsapp.net') ? number : `number@s.whatsapp.net`;
         bannedUsers.add(jid);
         await sock.sendMessage(from,  text: `User{number} has been banned.` });
-      } else {
         await sock.sendMessage(from, { text: 'Please provide a number to ban.' });
       }
     } else if (command.startsWith('.unban')) {
