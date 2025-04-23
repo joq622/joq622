@@ -9,7 +9,7 @@
     "restart": "pm2 restart JOQUER-ISHLY"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:joquer-baliyes-new",
+    "@whiskeysockets/baileys": "npm:asitha-baliyes-new",
     "@adiwajshing/keyed-db": "latest",
     "pino": "latest",
     "pm2": "latest",
