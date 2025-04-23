@@ -10,7 +10,7 @@ SESSION_ID: process.env.SESSION_ID === undefined ? 'මේක කපලා ඔ�
 PREFIX: process.env.PREFIX || '☆' ,
 PORT: process.env.PORT === undefined ? "8000" : process.env.PORT,
 SUDO: process.env.SUDO === undefined ? '255767191393,255752429665' : process.env.SUDO,
-SESSION_NAME: process.env.PORT === undefined ? "asitha" : process.env.SESSION_NAME,
+SESSION_NAME: process.env.PORT === undefined ? "Joquer" : process.env.SESSION_NAME,
 ALIVE_MSG: process.env.ALIVE_MSG === undefined ? "*Hello , I am always alive!! dont worry*" : process.env.ALIVE_MSG,
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS === undefined ?"true" : process.env.AUTO_READ_STATUS,
 MODE: process.env.MODE === undefined ?"private" : process.env.MODE,
