@@ -1,5 +1,5 @@
 {
-  "name": "ALPHA-MD",
+  "name": "JOQUER-ISHLY",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
@@ -7,18 +7,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node index.js", 
-    "keith": "pm2 start index.js --attach --max-memory-restart 490M",
+    "Joquer": "pm2 start index.js --attach --max-memory-restart 490M",
     "c": "tsc"
   },
   "keywords": [
     "bot",
     "Baileys",
-    "Alpha-Md",
+    "Joquer-Md",
     "whatsapp",
     "whatsapp-bot",
-    "keithkeizzah"
+    "GoodluckyEmmanuel"
   ],
-  "author": "keithkeizzah",
+  "author": "GoodluckyEmmanuel",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
