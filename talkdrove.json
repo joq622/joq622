@@ -12,7 +12,7 @@
       "required": false
     },
     "BOT_NAME": {
-      "description": "Enter your bot name here (CypherX is cool, but feel free to name it something quirky!)",
+      "description": "Enter your bot name here ",
       "value": "JOQUER-ISHLY",
       "required": false
     },
