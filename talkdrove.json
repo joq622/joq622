@@ -1,23 +1,23 @@
 {
-    "bot-name": "CypherX",
-    "description": "CypherX, the best WhatsApp Bot",
-    "logo": "https://i.ibb.co/Q4QCHYd/copilot-image-1739572393172.jpg",
+    "bot-name": "JOQUER-ISHLY",
+    "description": "No one like me",
+    "logo": "https://media-hosting.imagekit.io/afd259154b1c4eee/20240404_075706.jpg?Expires=1840196629&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Uoc~mAkBfSJLu5osrFzE3uNJFh6KHDr21ZuCuc1SxE6lNFK0znJnzQN-KuVb8ELaIIqxoXz6AHzIvDeIZ9LH0fa-UQsnPxzSr8qyHQPZdgeZya554k89LWlpk9jRJuQK1mquSMlgKeXBhHPJhQnVHiM-yx~gWUfJD9dB9bFQ0lB6Npg3OPX58zTiIv9lsiyzro~dxmRNCGfWrx4EkQtfjBPMKgl6WGXQ0wLz-NHt2NBaBN7HguZ9nRe~0qUP~ee9Hvqb9YbLPeIShjQrXaYZwvzT63vbq3cIwg34ipOCNs5LUSl8C11omXD-CzgOvboj3p80MUm0~~gVaOzotRzQwQ__",
     "keywords": ["whatsapp", "bot", "md"],
     "documentation-link": "cypherx-pair.onrender.com",
     "owner-verification": "tylor9kid@gmail.com", 
   "env": {
     "SESSION_ID": {
-      "description": "Enter your CypherX session id here; must start with XPLOADER-BOT:~ (Yes, it's like a secret agent code. Don’t mess it up!)",
+      "description": "Enter your JOQUER-ISHLY session id here; must start with XPLOADER-BOT:~ (Yes, it's like a secret agent code. Don’t mess it up!)",
       "value": "",
       "required": false
     },
     "BOT_NAME": {
       "description": "Enter your bot name here (CypherX is cool, but feel free to name it something quirky!)",
-      "value": "CypherX",
+      "value": "JOQUER-ISHLY",
       "required": false
     },
     "OWNER_NUMBER": {
-      "description": "Enter your number here, starting with country code (e.g., 2547xxxxxxxx, because even bots need to know how to reach you!)",
+      "description": "Enter your number here, starting with country code (e.g., 2557xxxxxxxx, because even bots need to know how to reach you!)",
       "value": "",
       "required": true
     },
