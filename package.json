@@ -1,7 +1,7 @@
 {
   "name": "JOQUER-ISHLY",
   "version": "2.0.0",
-  "description": "",
+  "description": "No one like me",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
@@ -29,7 +29,7 @@
     "@xct007/tiktok-scraper": "^1.0.2",  
     "@hapi/boom": "^10.0.1",
     "@types/node": "^18.0.6",
-    "@whiskeysockets/baileys": "github:Keithkeizzah/BaileysV2",
+    "@whiskeysockets/baileys": "github:joq622/Baileys",
     "ytdl-core": "npm:@distube/ytdl-core",
     "@google/generative-ai": "^0.1.3",
     "@xaviabot/fb-downloader": "^1.0.14",
