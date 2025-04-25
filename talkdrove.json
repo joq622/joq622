@@ -1,0 +1,35 @@
+{
+    "bot-name": "CypherX",
+    "description": "CypherX, the best WhatsApp Bot",
+    "logo": "https://i.ibb.co/Q4QCHYd/copilot-image-1739572393172.jpg",
+    "keywords": ["whatsapp", "bot", "md"],
+    "documentation-link": "cypherx-pair.onrender.com",
+    "owner-verification": "tylor9kid@gmail.com", 
+  "env": {
+    "SESSION_ID": {
+      "description": "Enter your CypherX session id here; must start with XPLOADER-BOT:~ (Yes, it's like a secret agent code. Don’t mess it up!)",
+      "value": "",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "Enter your bot name here (CypherX is cool, but feel free to name it something quirky!)",
+      "value": "CypherX",
+      "required": false
+    },
+    "OWNER_NUMBER": {
+      "description": "Enter your number here, starting with country code (e.g., 2547xxxxxxxx, because even bots need to know how to reach you!)",
+      "value": "",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Enter your name here (Who’s the boss behind the scenes? Spoiler: It's you!)",
+      "value": "",
+      "required": true
+    },
+    "TIMEZONE": {
+      "description": "Enter your timezone here. Google it or just leave it if you don't know! (The bot won’t mind, but you should be in sync with time zones!)",
+      "value": "Africa/Nairobi",
+      "required": false
+    }
+  }
+}
