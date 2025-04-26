@@ -1,0 +1,68 @@
+{
+  "name": "JOQUER-ISHLY",
+  "version": "first",
+  "description": "No one like me",
+  "logo": "https://i.ibb.co/Q4QCHYd/copilot-image-1739572393172.jpg",
+  "keywords": ["whatsapp", "bot", "md"],
+  "repository": "https://github.com/Dark-Xploit/CypherX",
+  "stack": "container",
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "env": {
+    "SESSION_ID": {
+      "description": "Enter your CypherX session id here; must start with XPLOADER-BOT:~ (Yes, it's like a secret agent code. Don’t mess it up!)",
+      "value": "",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "Enter your bot name here (CypherX is cool, but feel free to name it something quirky!)",
+      "value": "JOQUER-ISHLY",
+      "required": false
+    },
+    "OWNER_NUMBER": {
+      "description": "Enter your number here, starting with country code (e.g., 2557xxxxxxxx, because even bots need to know how to reach you!)",
+      "value": "",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Enter your name here (Who’s the boss behind the scenes? Spoiler: It's you!)",
+      "value": "",
+      "required": true
+    },
+   "HEROKU_API_KEY": {
+  "description": "Enter your Heroku API key here (Like a magic key that grants your bot superpowers on Heroku! Keep it safe, hero!)",
+  "value": "",
+  "required": false
+   },
+   "HEROKU_APP_NAME": {
+  "description": "Enter the Heroku app name you've just entered above here (The identity of your bot in the Heroku universe!)",
+  "value": "",
+  "required": false
+   },
+    "TIMEZONE": {
+      "description": "Enter your timezone here. Google it or just leave it if you don't know! (The bot won’t mind, but you should be in sync with time zones!)",
+      "value": "Africa/Nairobi",
+      "required": false
+    }
+ },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
