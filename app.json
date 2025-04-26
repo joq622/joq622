@@ -16,12 +16,12 @@
   },
   "env": {
     "SESSION_ID": {
-      "description": "Enter your CypherX session id here; must start with XPLOADER-BOT:~ (Yes, it's like a secret agent code. Don’t mess it up!)",
+      "description": "Enter your JOQUER-ISHLY session id here; must start with XPLOADER-BOT:~ (Yes, it's like a secret agent code. Don’t mess it up!)",
       "value": "",
       "required": false
     },
     "BOT_NAME": {
-      "description": "Enter your bot name here (CypherX is cool, but feel free to name it something quirky!)",
+      "description": "Enter your bot name here (JOQUER-ISHLY looks cool, but feel free to name it something quirky!)",
       "value": "JOQUER-ISHLY",
       "required": false
     },
