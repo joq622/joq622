@@ -1,6 +1,6 @@
 {
-    "bot-name": "CypherX",
-    "description": "CypherX, the best WhatsApp Bot",
+    "bot-name": "JOQUER-ISHLY",
+    "description": "JOQUER-ISHLY, the best WhatsApp Bot",
     "logo": "https://files.catbox.moe/lhmc6j.jpg",
     "keywords": ["whatsapp", "bot", "md"],
     "documentation-link": "cypherx-pair.onrender.com",
@@ -12,8 +12,8 @@
       "required": false
     },
     "BOT_NAME": {
-      "description": "Enter your bot name here (CypherX is cool, but feel free to name it something quirky!)",
-      "value": "JOQUER-ISHLY",
+      "description": "Enter your bot name here (JOQUER-ISHL is cool, but feel free to name it something quirky!)",
+      "value": "JOQUER-ISHLY"
       "required": false
     },
     "OWNER_NUMBER": {
