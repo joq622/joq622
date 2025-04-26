@@ -1,8 +1,8 @@
 
 {
-    "bot-name": "STANY TXR ZMD",
-    "description": "Whiskey Sockets Baileys Whatsapp bot By ©𝚂𝚃𝙰𝙽𝚈 𝚃𝚇𝚁 𝚉𝙼𝙳",
-    "logo": "https://files.catbox.moe/goel5y.jpg",
+    "bot-name": "JOQUER-ISHLY",
+    "description": "No one like me",
+    "logo": "https://files.catbox.moe/lhmc6j.jpg",
     "keywords": ["bot"],
     "documentation-link": "https://pairs-rzev.onrender.com/",
     "owner-verification": "caseywebsthedonn25@gmail.com",
@@ -25,7 +25,7 @@
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "x-𝚆.𝙰 𝙱𝙾𝚃"
+      "value": "G-I B 𝙱𝙾𝚃"
   
     },
     
@@ -97,7 +97,7 @@
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "STANY TXR ZMD"
+      "value": "GOLDEN ISHLY"
 
       }, 
 
@@ -117,7 +117,7 @@
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*©𝚂𝚃𝙰𝙽𝚈 𝚃𝚇𝚁 𝚉𝙼𝙳*"
+      "value": "*©GOLDEN ISHLY*"
     },
 
       "DELETE_LINKS": {
