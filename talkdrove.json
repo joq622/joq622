@@ -12,7 +12,7 @@
       "required": false
     },
     "BOT_NAME": {
-      "description": "Enter your bot name here (JOQUER-ISHL is cool, but feel free to name it something quirky!)",
+      "description": "Enter your bot name here (JOQUER-ISHLY is cool, but feel free to name it something quirky!)",
       "value": "JOQUER-ISHLY"
       "required": false
     },
