@@ -1,167 +1,35 @@
-
 {
-    "bot-name": "JOQUER-ISHLY",
-    "description": "No one like me",
+    "bot-name": "CypherX",
+    "description": "CypherX, the best WhatsApp Bot",
     "logo": "https://files.catbox.moe/lhmc6j.jpg",
-    "keywords": ["bot"],
-    "documentation-link": "https://pairs-rzev.onrender.com/",
-    "owner-verification": "caseywebsthedonn25@gmail.com",
-  
-    "env": {
-      "SESSION_ID": {
-        "description": "Put your SESSION_ID here. Make sure it starts with Caseyrhodes~  or get session id from here,  https://pairs-rzev.onrender.com/",
-        "value":"",
-        "required": true
-        
-      },
-      "PREFIX": {
-        "description": "Bot command prefix, (e.g, . , ! @ etc",
-        "value":"#",
-        "required": true
-        
-      },
-    
- 
-    "STICKER_NAME": {
-      "description": "type your sticker pack name.",
-      "required": false,
-      "value": "G-I B 𝙱𝙾𝚃"
-  
+    "keywords": ["whatsapp", "bot", "md"],
+    "documentation-link": "cypherx-pair.onrender.com",
+    "owner-verification": "tylor9kid@gmail.com", 
+  "env": {
+    "SESSION_ID": {
+      "description": "Enter your JOQUER-ISHLY session id here; must start with XPLOADER-BOT:~ (Yes, it's like a secret agent code. Don’t mess it up!)",
+      "value": "",
+      "required": false
     },
-    
-    "MODE": {
-      "description": "select your bot work type public-private-inbox-group.",
-      "required": false,
-      "value": "public"
-      
-    },
-    
-    
-    "ALWAYS_ONLINE": {
-      "description": "Make it true if want always online.",
-      "required": false,
-      "value": "false"  
-    },    
-  
-    "AUTO_VOICE": {
-      "description": "Make it true if want automatic voice reply .",
-      "required": false,
-      "value": "false"
-    }, 
-
-    "AUTO_REPLY": {
-      "description": "Make it true if you want automatic reply.",
-      "required": false,
-      "value": "false"
-    }, 
-
-    "AUTO_STICKER": {
-      "description": "Make it true if you want automatic sticker.",
-      "required": false,
-      "value": "false"
-    }, 
-
-
-    "AUTO_STATUS_REACT": {
-      "description": "Make it true for automatic status react & seen.",
-      "required": true,
-      "value": "true"
-    }, 
-
-    "AUTO_STATUS_REPLY": {
-      "description": "Make it true for auto reply msg on status seen.",
-      "required": true,
-      "value": "false"
-    }, 
-
-    "AUTO_STATUS_MSG": {
-      "description": "Type custom message on status reply",
-      "required": true,
-      "value": "*©𝚂𝚃𝙰𝙽𝚈 𝚃𝚇𝚁 𝚉𝙼𝙳  𝑩𝒐𝒕 𝑽𝒊𝒆𝒘𝒆𝒅 𝒀𝒐𝒖𝒓 𝑺𝒕𝒂𝒕𝒖𝒔 🦄*"
-   
-     }, 
-    
-    "OWNER_NAME": {
-      "description": "Type Bot Owner Name.",
-      "required": false,
-      "value": "©𝚂𝚃𝙰𝙽𝚈 𝚃𝚇𝚁 𝚉𝙼𝙳"
-}, 
-
-    "OWNER_NUMBER": {
-      "description": "put the owner number for bot.",
-      "required": false,
-      "value": "255794481386"
-
-    }, 
-
     "BOT_NAME": {
-      "description": "Type here the bot name.",
-      "required": false,
-      "value": "GOLDEN ISHLY"
-
-      }, 
-
-    "ANTI_LINK": {
-      "description": "Make it true if you want bot auto remove group link.",
-      "required": true,
-      "value": "true"
-      
+      "description": "Enter your bot name here (CypherX is cool, but feel free to name it something quirky!)",
+      "value": "JOQUER-ISHLY",
+      "required": false
     },
-    
-    "ANTI_BAD": {
-      "description": "Make it true if you want bot auto delete bad words.",
-      "required": false,
-      "value": "false"
-    }, 
-
-     "DESCRIPTION": {
-      "description": "add caption for menu and other",
-      "required": false,
-      "value": "*©GOLDEN ISHLY*"
+    "OWNER_NUMBER": {
+      "description": "Enter your number here, starting with country code (e.g., 2557xxxxxxxx, because even bots need to know how to reach you!)",
+      "value": "",
+      "required": true
     },
-
-      "DELETE_LINKS": {
-      "description": "remove links from group automatically without removing member",
-      "required": false,
-      "value": "true"
+    "OWNER_NAME": {
+      "description": "Enter your name here (Who’s the boss behind the scenes? Stupid: It's you!)",
+      "value": "",
+      "required": true
     },
-    
-    "AUTO_RECORDING": {
-      "description": "Make it true if you want auto recoding.",
-      "required": false,
-      "value": "false"
-    },
-
-    "AUTO_TYPING": {
-      "description": "Make it true if you want auto typing.",
-      "required": false,
-      "value": "false"
-    },
-
-    "AUTO_REACT": {
-      "description": "Make it true if you want react on every message.",
-      "required": false,
-      "value": "false"
-    },
-    
-    "CUSTOM_REACT": {
-      "description": "Make it true if you want custom reactions.",
-      "required": false,
-      "value": "false"
-      
-    }, 
-    
-    "CUSTOM_REACT_EMOJIS": {
-      "description": "put here custom react react emojis.",
-      "required": false,
-      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
-    
-    }, 
-
-    "READ_MESSAGE": {
-      "description": "Make it true if you want bot read your all sms just now.",
-      "required": false,
-      "value": "false"
+    "TIMEZONE": {
+      "description": "Enter your timezone here. Google it or just leave it if you don't know! (The bot won’t mind, but you should be in sync with time zones!)",
+      "value": "Africa/Nairobi",
+      "required": false
     }
   }
 }
