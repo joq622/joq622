@@ -16,7 +16,7 @@
   },
   "env": {
     "SESSION_ID": {
-      "description": "Enter your JOQUER-ISHLY session id here; "" ,
+      "description": "Enter your JOQUER-ISHLY session id here; "",
       "value": "",
       "required": false
     },
