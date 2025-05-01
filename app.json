@@ -2,7 +2,7 @@
   "name": "JOQUER-ISHLY",
   "version": "first",
   "description": "No one like me",
-  "logo": "https://files.catbox.moe/lhmc6j.jpg"",
+  "logo": "https://files.catbox.moe/lhmc6j.jpg",
   "keywords": ["whatsapp", "bot", "md"],
   "repository": "",
   "stack": "container",
@@ -16,7 +16,7 @@
   },
   "env": {
     "SESSION_ID": {
-      "description": "Enter your JOQUER-ISHLY session id here; "",
+      "description": "Enter your JOQUER-ISHLY session id here; ",
       "value": "",
       "required": false
     },
