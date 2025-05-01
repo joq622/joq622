@@ -16,7 +16,7 @@
   },
   "env": {
     "SESSION_ID": {
-      "description": "Enter your JOQUER-ISHLY session id here; must start with XPLOADER-BOT:~ (Yes, it's like a secret agent code. Don’t mess it up!)",
+      "description": "Enter your JOQUER-ISHLY session id here; "" ,
       "value": "",
       "required": false
     },
@@ -31,7 +31,7 @@
       "required": true
     },
     "OWNER_NAME": {
-      "description": "Enter your name here (Who’s the boss behind the scenes? Spoiler: It's you!)",
+      "description": "Enter your name here (Who’s the boss that owns the bot)",
       "value": "",
       "required": true
     },
