@@ -11,8 +11,10 @@
   "author": "joq622",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys": "^5.4.0",  // WhatsApp API library
-    "dotenv": "^10.0.0"  // For managing environment variables
+    "@adiwajshing/baileys": "^5.4.0"
+    // Whatsapp API library
+    "dotenv": "^10.0.0"  
+    // For managing environment variables
   },
   "devDependencies": {}
 }
