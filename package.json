@@ -1,20 +1,18 @@
 {
-  "name": "QUEEN-AISHA",
+  "name": "queen-aisha",
   "version": "1.0.0",
-  "description": "Deployment script for QUEEN-AISHA bot",
+  "description": "A WhatsApp bot named QUEEN-AISHA",
   "main": "index.js",
-  "engines": {
-      "node": ">= 18.x",
-      "npm": ">= 10.x"
-   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Joquer",
+  "keywords": ["whatsapp", "bot", "queen-aisha"],
+  "author": "joq622",
   "license": "MIT",
   "dependencies": {
-        "adm-zip": "^0.5.16",
-        "axios": "^1.8.3",
-        "moment-timezone": "^0.5.45"
-  }
+    "@adiwajshing/baileys": "^5.4.0",  // WhatsApp API library
+    "dotenv": "^10.0.0"  // For managing environment variables
+  },
+  "devDependencies": {}
 }
