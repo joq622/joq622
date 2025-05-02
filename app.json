@@ -1,8 +1,8 @@
 {
-  "name": "JOQUER-ISHLY",
+  "name": "QUEEN-AISHA",
   "version": "first",
   "description": "No one like me",
-  "logo": "https://files.catbox.moe/lhmc6j.jpg",
+  "logo": "https://files.catbox.moe/x7wslu.jpeg",
   "keywords": ["whatsapp", "bot", "md"],
   "repository": "",
   "stack": "container",
@@ -16,13 +16,13 @@
   },
   "env": {
     "SESSION_ID": {
-      "description": "Enter your JOQUER-ISHLY session id here; ",
+      "description": "Enter your QUEEN-AISHA session id here; ",
       "value": "",
       "required": false
     },
     "BOT_NAME": {
-      "description": "Enter your bot name here (JOQUER-ISHLY looks cool, but feel free to name it something quirky!)",
-      "value": "JOQUER-ISHLY",
+      "description": "Enter your bot name here (QUEEN-AISHA looks cool, but feel free to name it something quirky!)",
+      "value": "",
       "required": false
     },
     "OWNER_NUMBER": {
