@@ -1,7 +1,7 @@
 {
-  "name": "JOQUER-ISHLY",
+  "name": "QUEEN-AISHA",
   "version": "1.0.0",
-  "description": "Deployment script for JOQUER-ISHLY bot",
+  "description": "Deployment script for QUEEN-AISHA bot",
   "main": "index.js",
   "engines": {
       "node": ">= 18.x",
