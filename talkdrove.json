@@ -1,19 +1,19 @@
 {
-    "bot-name": "JOQUER-ISHLY",
-    "description": "JOQUER-ISHLY, the best WhatsApp Bot",
+    "bot-name": "QUEEN-AISHA",
+    "description": "QUEEN AISHA, the best WhatsApp Bot",
     "logo": "https://files.catbox.moe/lhmc6j.jpg",
     "keywords": ["whatsapp", "bot", "md"],
-    "documentation-link": "cypherx-pair.onrender.com",
-    "owner-verification": "tylor9kid@gmail.com", 
+    "documentation-link": "https://queen-aisha.onrender.com",
+    "owner-verification": "mserekalegoodlucky@gmail.com", 
   "env": {
     "SESSION_ID": {
-      "description": "Enter your JOQUER-ISHLY session id here; must start with XPLOADER-BOT:~ (Yes, it's like a secret agent code. Don’t mess it up!)",
+      "description": "Enter your QUEEN-AISHA session id here; must start with XPLOADER-BOT:~ (Yes, it's like a secret agent code. Don’t mess it up!)",
       "value": "",
       "required": false
     },
     "BOT_NAME": {
-      "description": "Enter your bot name here (JOQUER-ISHLY is cool, but feel free to name it something quirky!)",
-      "value": "JOQUER-ISHLY"
+      "description": "Enter your bot name here (QUEEN AISHA looks cool, but feel free to name it something quirky!)",
+      "value": ""
       "required": false
     },
     "OWNER_NUMBER": {
@@ -22,7 +22,7 @@
       "required": true
     },
     "OWNER_NAME": {
-      "description": "Enter your name here (Who’s the boss behind the scenes? Stupid: It's you!)",
+      "description": "Enter your name here (Who’s the boss behind the scenes? Oooooooh: It's you!)",
       "value": "",
       "required": true
     },
