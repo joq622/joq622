@@ -15,7 +15,7 @@
 
   
 
-<p align="centre"><img src="https://files.catbox.moe/nxiz2p.jpg" width="890" heigh="590"
+<p align="centre"><img src="https://files.catbox.moe/lhmc6j.jpg" width="640" heigh="480"
 
 
 
