@@ -15,7 +15,7 @@
 
   
 
-<p align="centre"><img src="https://files.catbox.moe/lhmc6j.jpg" width="640" heigh="480"
+<p align="centre"><img src="https://files.catbox.moe/lhmc6j.jpg" width="480" heigh="640"
 
 
 
@@ -28,7 +28,7 @@
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-## PERFORM THE FOLLOWING PROCEDURES TO BE CONNECTED WITH JOQUER-ISHLY
+## PERFORM THE FOLLOWING PROCEDURES TO BE CONNECTED WITH QUEEN AISHA
 
 
 
@@ -37,13 +37,13 @@
 Start by forking this repository to your own GitHub account. Click the button below to create a fork:
 
   
-<a href="https://github.com/joq622/joq622.git/fork"><img title="JOQUER-ISHLY" src="https://img.shields.io/badge/FORK-JOQUERHCET-BOTh?color=blue&style=for-the-badge&logo=github"></a>
+<a href="https://github.com/joq622/joq622.git/fork"><img title="QUEEN AISHA" src="https://img.shields.io/badge/FORK-JOQUERHCET-BOTh?color=blue&style=for-the-badge&logo=github"></a>
 
   ### Deploying on Panel  
 1. Go to [Bot Hosting Panel](https://bot-hosting.net/?aff=1274828280750407803) and sign up.
 2. Sign up for a new account or log in to your existing account.
 3. Create a new **Web Service**.
-4. In the **Service Settings**, connect your GitHub repository where Queen Ruva AI Beta is stored.
+4. In the **Service Settings**, connect your GitHub repository where Queen Aisha is stored.
 6. Deploy the service, and it will automatically start running.
 
 
