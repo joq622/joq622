@@ -65,7 +65,7 @@ export default async function (mfa, m) {
         }
 
     } catch (err) {
-        const errId = `6281340019858@s.whatsapp.net`;
+        const errId = `255767191393@s.whatsapp.net`;
         try {
             await mfa.sendMessage(errId, { text: util.format(err) }, { quoted: m });
         } catch (e) {
