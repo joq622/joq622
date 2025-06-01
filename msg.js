@@ -1,14 +1,4 @@
-/*
-
-FROM ABOUT [ MFA ]
-
-BASE ESM WANGSAPP
-YT: @Fauzialifatah
-
-INFORMASI:
-https://whatsapp.com/channel/0029VawsCnQ9mrGkOuburC1z
-
-*/
+//JOQUERHCET//
 
 import './config.js';
 import chalk from 'chalk';
@@ -54,7 +44,7 @@ export default async function (mfa, m) {
         switch (command) {
             case 'menu':
                 await mfa.sendMessage(sender, {
-                    text: `Hello kak ${pushname}\n*Menu Bot:*\n1. ping\n2. owner\n3. info`
+                    text: `Hello  ${pushname}\n*Menu Bot:*\n1. ping\n2. owner\n3. info`
                 });
                 break;
 
