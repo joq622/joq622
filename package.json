@@ -1,7 +1,7 @@
 {
   "name": "queen aisha-bot",
   "version": "1.0.0",
-  "description": "Bot WhatsApp menggunakan @whiskeysockets/baileys dengan ESM",
+  "description": "A whatsapp bot created by Joquer",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "baileys",
     "esm"
   ],
-  "author": "Pondaaa",
+  "author": "Joquer",
   "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.6.1",
