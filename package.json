@@ -1,5 +1,5 @@
 {
-  "name": "base-bot",
+  "name": "queen aisha-bot",
   "version": "1.0.0",
   "description": "Bot WhatsApp menggunakan @whiskeysockets/baileys dengan ESM",
   "type": "module",
