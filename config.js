@@ -10,8 +10,8 @@ https://whatsapp.com/channel/0029VawsCnQ9mrGkOuburC1z
 
 */
 
-export const ownerNumber = '-';
-export const namabot = '-';
+export const ownerNumber = '255767191393;
+export const namabot = 'QUEEN AISHA';
 
 import chalk from 'chalk';
 import fs from 'fs';
