@@ -1,15 +1,4 @@
-/*
-
-FROM ABOUT [ MFA ]
-
-BASE ESM WANGSAPP
-YT: @Fauzialifatah
-
-INFORMASI:
-https://whatsapp.com/channel/0029VawsCnQ9mrGkOuburC1z
-
-*/
-
+//JOQUERHCET//
 import './config.js';
 import * as baileys from '@whiskeysockets/baileys';
 import qrcode from 'qrcode-terminal';
