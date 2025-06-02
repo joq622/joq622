@@ -1,14 +1,4 @@
-/*
-
-FROM ABOUT [ MFA ]
-
-BASE ESM WANGSAPP
-YT: @Fauzialifatah
-
-INFORMASI:
-https://whatsapp.com/channel/0029VawsCnQ9mrGkOuburC1z
-
-*/
+//JOQUERHCET//
 
 export const ownerNumber = '255767191393;
 export const namabot = 'QUEEN AISHA';
